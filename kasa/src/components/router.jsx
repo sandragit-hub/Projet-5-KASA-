@@ -7,7 +7,7 @@ import Habitations from '../assets/pages/Habitations';
 function AppRouter() {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/error" element={<Error />} />
             <Route path="/habitations/*" element={<Habitations />} />
