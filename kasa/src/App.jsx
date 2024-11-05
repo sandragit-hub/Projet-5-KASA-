@@ -1,26 +1,13 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Header from './layout/Header/Header.jsx'
-import Home from './pages/Home'
-import About from './pages/About'
-import Error from './pages/Error'
-import Habitations from './pages/Habitations'
-
-
-const router = createBrowserRouter([
-
-  { path: '/', element: <Home /> },
-  { path: '/about', element: <About /> },
-  { path: '/error', element: <Error /> },
-  { path: '/habitations', element: <Habitations /> },
-
-]);
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRouter from './router';
+import Header from './Header/Header'
 function App() {
   return (
     <>
       <Header />
-      <RouterProvider router={router} />
+      <AppRouter />
+
     </>
   );
 }
