@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from '../../pages/Home';
-import About from '../../pages/About';
-import Error from '../../pages/Error';
-import Habitations from '../../pages/Habitations';
+import Home from '../assets/pages/Home';
+import About from '../assets/pages/About';
+import Error from '../assets/pages/Error';
+import Habitations from '../assets/pages/Habitations';
 
 function AppRouter() {
     return (
