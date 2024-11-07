@@ -1,8 +1,9 @@
 header {
     align-items: center;
     display: inline-flex;
-    margin: 40px 10%;
+    margin: auto;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 header>img {
@@ -16,7 +17,7 @@ nav {
 }
 
 .linkNav {
-    color: #ff6060;
+    color: #000000;
     margin: auto 25px;
     text-decoration: none;
 }
@@ -32,7 +33,7 @@ nav {
 @media screen and (max-width: 1490px) {
     header {
         margin: 40px 2.5%;
-        width: 100%;
+        width: 95%;
     }
 
     header>img {

@@ -4,16 +4,20 @@ import Header from './layout/Header/Header'
 import Footer from './layout/Footer/Footer'
 import './layout/Header/Header.scss'
 import './layout/Footer/Footer.scss'
-
+import './components/banner/Banner.scss'
+import './components/card/card.scss'
+import './App.css'
 
 function App() {
   return (
-    <Router>
-      <Header />
+    <body>
+      <Router>
+        <Header />
 
-      <AppRouter />
-      <Footer />
-    </Router>
+        <AppRouter />
+        <Footer />
+      </Router>
+    </body>
   );
 }
 
