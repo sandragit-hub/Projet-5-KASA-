@@ -1,7 +1,7 @@
-export function Card({ id, title, image }) {
+export function Card({ id, title, pictures }) {
     return (
         <article className="card">
-            <img src={image} alt="" />
+            <img src={pictures} alt="" />
             <h3>{title}</h3>
         </article>
     )

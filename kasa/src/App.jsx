@@ -6,6 +6,7 @@ import './layout/Header/Header.scss'
 import './layout/Footer/Footer.scss'
 import './components/banner/Banner.scss'
 import './components/card/card.scss'
+import './components/Collapse/Collapse.scss'
 import './App.css'
 
 function App() {

@@ -1,11 +1,9 @@
-import banner from "../../assets/image/banner.png"
-
-export function Banner() {
+export function Banner({ image, text, showShadow }) {
     return (
         <div className='Banner'>
-            <img src={banner} alt='moutain' />
-            <div className="filterShadow"></div>
-            <h2 className='bannerText'> Chez vous, partout et ailleurs  </h2>
+            <img src={image} alt='moutain' />
+            {showShadow && <div className="filterShadow"></div>}
+            <h2 className='bannerText'> {text} </h2>
         </div>
 
     )
