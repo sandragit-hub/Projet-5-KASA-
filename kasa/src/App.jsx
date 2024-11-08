@@ -14,7 +14,6 @@ function App() {
     <body>
       <Router>
         <Header />
-
         <AppRouter />
         <Footer />
       </Router>
