@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div>
             <Banner image={banner} text="Chez vous, partout et ailleurs" showShadow={true} />
-            <div key={Card.id} className="divCard">
+            <div className="divCard">
                 <Card>
 
                 </Card>
