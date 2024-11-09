@@ -32,10 +32,17 @@
     border: none;
     padding: 0;
     outline: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.arrowDropdown.open {
+    transform: rotate(180deg);
 }
 
 .arrow {
     height: 20px;
+
 }
 
 .arrowDropdown:hover {
