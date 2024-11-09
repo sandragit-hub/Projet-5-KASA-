@@ -1,16 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from '../assets/pages/Home';
-import About from '../assets/pages/About';
-import Error from '../assets/pages/Error';
-import Habitations from '../assets/pages/Habitations';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Error from '../pages/Error';
+import Habitation from '../pages/Habitation';
 
 function AppRouter() {
     return (
         <Routes>
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/error" element={<Error />} />
-            <Route path="/habitations/*" element={<Habitations />} />
+            <Route path="/habitation/*" element={<Habitation />} />
             <Route path="*" element={<Error />} />
         </Routes>
     );

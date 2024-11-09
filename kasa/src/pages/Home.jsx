@@ -1,6 +1,6 @@
-import { Banner } from "../../components/banner/Banner";
-import { Card } from "../../components/card/card";
-import banner from "../../assets/image/banner.png"
+import { Banner } from "../components/banner/Banner";
+import { Card } from "../components/card/card";
+import banner from "../assets/image/banner.png"
 
 export default function Home() {
     return (
