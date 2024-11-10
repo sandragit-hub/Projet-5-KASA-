@@ -62,3 +62,28 @@
     min-height: 100px;
     padding: 25px 10px 10px 10px;
 }
+
+.dropDownBannerDescription {
+    width: 60%;
+    background-color: #FF6060;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropDownBannerEquipement {
+    width: 60%;
+    background-color: #FF6060;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}

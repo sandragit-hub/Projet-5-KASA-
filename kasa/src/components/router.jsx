@@ -10,7 +10,7 @@ function AppRouter() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/error" element={<Error />} />
-            <Route path="/habitation/*" element={<Habitation />} />
+            <Route path="/habitation/:id" element={<Habitation />} />
             <Route path="*" element={<Error />} />
         </Routes>
     );
