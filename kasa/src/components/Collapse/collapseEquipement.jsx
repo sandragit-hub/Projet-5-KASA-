@@ -5,7 +5,7 @@ export function CollapseEquipement({ equipments }) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="dropDownDiv">
+        <div className="dropDownDivInfo">
             <div className="dropDownBannerEquipement" onClick={() => setOpen(!open)}>
                 <h3 className="collapseTitle">Équipements</h3>
                 <button className={`arrowDropdown ${open ? 'open' : ''}`}>
