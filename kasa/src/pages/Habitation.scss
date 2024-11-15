@@ -2,9 +2,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
     max-width: 1240px;
     margin: 0 auto;
+}
+
+.firstInfo {
+    display: flex;
+    align-items: center;
 }
 
 .habitation {
@@ -13,10 +17,24 @@
     width: 100%;
 }
 
+.habitation h2 {
+    color: #FF6060;
+}
+
+.moreInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
 .infoPerson {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: flex-end;
+
 }
 
 .infoPerson img {
@@ -27,6 +45,9 @@
 
 .infoPerson span {
     font-weight: 500;
+    display: wrap;
+    flex-wrap: wrap;
+    color: #FF6060;
 
 }
 
@@ -38,7 +59,6 @@
 
 .tags {
     display: flex;
-    padding: 0;
     width: 100%;
 }
 
@@ -51,8 +71,12 @@
     margin-right: 10px;
     border-radius: 10px;
     font-size: 14px;
-    margin: auto 10px;
     min-width: 115px;
     padding: 5px 10px;
 
+}
+
+.classRating {
+    display: flex;
+    justify-content: flex-end;
 }
