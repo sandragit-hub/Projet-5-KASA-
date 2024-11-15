@@ -1,4 +1,55 @@
+.allInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.habitation {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.infoPerson {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+}
+
+.infoPerson img {
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+}
+
+.infoPerson span {
+    font-weight: 500;
+
+}
+
 .infoLogement {
     display: flex;
     flex-direction: row;
+}
+
+.tags {
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+.tags span {
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    background-color: #FF6060;
+    color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: auto 10px;
+    min-width: 115px;
+    padding: 5px 10px;
+
 }
