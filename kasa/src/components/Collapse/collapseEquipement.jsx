@@ -1,5 +1,6 @@
 import { useState } from "react";
 import arrow from "../../assets/image/arrow.png"
+import PropTypes from 'prop-types';
 
 export function CollapseEquipement({ equipments }) {
     const [open, setOpen] = useState(false);
@@ -16,3 +17,7 @@ export function CollapseEquipement({ equipments }) {
         </div>
     );
 };
+
+CollapseEquipement.propTypes = {
+    equipments: PropTypes.string,
+}

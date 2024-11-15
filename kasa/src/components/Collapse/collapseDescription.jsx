@@ -1,5 +1,6 @@
 import { useState } from "react";
 import arrow from "../../assets/image/arrow.png"
+import PropTypes from 'prop-types';
 
 export function CollapseDescription({ description }) {
     const [open, setOpen] = useState(false);
@@ -16,3 +17,7 @@ export function CollapseDescription({ description }) {
         </div>
     );
 };
+
+CollapseDescription.propTypes = {
+    description: PropTypes.string,
+}

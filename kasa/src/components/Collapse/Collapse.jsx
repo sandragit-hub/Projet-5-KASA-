@@ -1,8 +1,9 @@
 import { useState } from "react";
 import arrow from "../../assets/image/arrow.png"
 import '../../components/Collapse/Collapse.scss'
+import PropTypes from 'prop-types';
 
-export function Collapse({ title, détails }) {
+export function Collapse({ title, details }) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -13,7 +14,12 @@ export function Collapse({ title, détails }) {
                     <img className='arrow' src={arrow} alt="flèche pour ouvrir la description" />
                 </button>
             </div>
-            {open && <div className="descriptionDropdown">{détails}</div>}
+            {open && <div className="descriptionDropdown">{details}</div>}
         </div>
     );
 };
+
+Collapse.propTypes = {
+    title: PropTypes.string,
+    details: PropTypes.string,
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import arrowLeft from "../../assets/image/arrowLeft.png";
 import arrowRight from "../../assets/image/arrowRight.png";
 import "../../components/carousel/carousel.scss";
+import PropTypes from 'prop-types';
 
 export default function Carousel({ pictures }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,4 +33,8 @@ export default function Carousel({ pictures }) {
             )}
         </div>
     );
+}
+
+Carousel.propTypes = {
+    pictures: PropTypes.array.isRequired
 }

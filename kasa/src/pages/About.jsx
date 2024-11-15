@@ -1,10 +1,11 @@
 import { Banner } from "../components/banner/Banner";
 import bannerAbout from "../assets/image/bannerAbout.png"
 import { Collapse } from "../components/Collapse/Collapse";
+import "../pages/About.scss"
 
 export default function About() {
     return (
-        <div>
+        <div className="aboutPage">
             <Banner className='bannerAbout' image={bannerAbout} showShadow={false} />
             <Collapse title="Fiabilité" détails="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
             <Collapse title="Respect" détails="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />

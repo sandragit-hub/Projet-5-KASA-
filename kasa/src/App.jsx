@@ -6,13 +6,11 @@ import './App.css'
 
 function App() {
   return (
-    <body>
-      <Router>
-        <Header />
-        <AppRouter />
-        <Footer />
-      </Router>
-    </body>
+    <Router>
+      <Header />
+      <AppRouter />
+      <Footer />
+    </Router>
   );
 }
 
