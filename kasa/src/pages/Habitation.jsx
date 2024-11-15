@@ -30,20 +30,24 @@ export default function Habitation() {
     return (
         <div className="allInfo">
             <Carousel pictures={logement.pictures} />
-            <div className="habitation">
-                <h2>{logement.title}</h2>
-                <p>{logement.location}</p>
-                <div className="tags">
-                    {logement.tags.map((tag) => (
-                        <span key={tag.id} className="tag">{tag}</span>
-                    ))}
+            <div className="firstInfo">
+                <div className="habitation">
+                    <h2>{logement.title}</h2>
+                    <p>{logement.location}</p>
+                    <div className="tags">
+                        {logement.tags.map((tag) => (
+                            <span key={tag.id} className="tag">{tag}</span>
+                        ))}
+                    </div>
                 </div>
-                <div className="infoPerson">
-                    <span>{name}</span>
-                    <img src={logement.host.picture} alt='portrait de la personne' />
-                </div>
-                <div className="classRating">
-                    <Rating rating={rating} />
+                <div className="moreInfo">
+                    <div className="infoPerson">
+                        <span >{name}</span>
+                        <img src={logement.host.picture} alt='portrait de la personne' />
+                    </div>
+                    <div className="classRating">
+                        <Rating rating={rating} />
+                    </div>
                 </div>
             </div>
             <div className="infoLogement">
