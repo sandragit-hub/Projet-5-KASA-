@@ -1,3 +1,5 @@
+import '../../components/Banner/Banner.scss'
+
 export function Banner({ image, text, showShadow }) {
     return (
         <div className='Banner'>
