@@ -1,4 +1,5 @@
 import '../../components/Banner/Banner.scss'
+import PropTypes from 'prop-types';
 
 export function Banner({ image, text, showShadow }) {
     return (
@@ -10,3 +11,9 @@ export function Banner({ image, text, showShadow }) {
 
     )
 };
+
+Banner.propTypes = {
+    image: PropTypes.string,
+    text: PropTypes.string,
+    showShadow: PropTypes.string,
+}
