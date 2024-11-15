@@ -1,5 +1,7 @@
 import { useState } from "react";
-import "../../components/carousel/carousel.scss"
+import arrowLeft from "../../assets/image/arrowLeft.png";
+import arrowRight from "../../assets/image/arrowRight.png";
+import "../../components/carousel/carousel.scss";
 
 export default function Carousel({ pictures }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,10 +19,10 @@ export default function Carousel({ pictures }) {
                 <>
                     <div className="carouselBtn">
                         <button className="carouseSlide" onClick={prevSlide}>
-                            {"<"}
+                            <img src={arrowLeft} alt='flèche gauche' style={{ width: '40px', height: '60px' }} />
                         </button>
                         <button className="carouselSlide" onClick={nextSlide}>
-                            {">"}
+                            <img src={arrowRight} alt='flèche droite' style={{ width: '40px', height: '60px' }} />
                         </button>
                     </div>
                     <div className="carouselCounter">

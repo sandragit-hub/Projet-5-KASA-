@@ -1,9 +1,11 @@
 header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    display: inline-flex;
-    margin: auto;
-    width: 100%;
-    margin-bottom: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 90%;
 }
 
 header>img {
