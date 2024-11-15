@@ -23,23 +23,24 @@ export default function Habitation() {
     if (!logement) return <p>Logement non trouvé.</p>;
 
     return (
-        <div className="habitation">
+        <div className="allInfo">
             <Carousel pictures={logement.pictures} />
-            <h2>{logement.title}</h2>
-            <p>{logement.location}</p>
-            <div className="tags">
-                {logement.tags.map((tag, index) => (
-                    <span key={index} className="tag">{tag}</span>
-                ))}
+            <div className="habitation">
+                <h2>{logement.title}</h2>
+                <p>{logement.location}</p>
+                <div className="tags">
+                    {logement.tags.map((tag, index) => (
+                        <span key={index} className="tag">{tag}</span>
+                    ))}
+                </div>
+                <div className="infoPerson">
+                    <span>{name}</span>
+                    <img src={logement.host.picture} alt='portrait de la personne' />
+                </div>
+                <div className="classRating">
+                    <Rating rating={rating} />
+                </div>
             </div>
-            <div className="infoPerson">
-                <span>{name}</span>
-                <img src={logement.host.picture} alt='portrait de la personne' />
-            </div>
-            <div className="classRating">
-                <Rating rating={rating} />
-            </div>
-
             <div className="infoLogement">
                 <CollapseDescription description={logement.description} />
                 <CollapseEquipement equipments=
