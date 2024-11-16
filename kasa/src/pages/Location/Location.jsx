@@ -42,8 +42,10 @@ export default function Habitation() {
                 </div>
                 <div className="moreInfo">
                     <div className="infoPerson">
-
-                        <span >{name}</span>
+                        <div className="hostName">
+                            <span>{name[0]}</span>
+                            <span>{name[1]}</span>
+                        </div>
                         <img src={logement.host.picture} alt='portrait de la personne' />
                     </div>
                     <div className="classRating">

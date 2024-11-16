@@ -9,6 +9,7 @@
 .firstInfo {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .habitation {
@@ -34,6 +35,7 @@
     width: 100%;
     align-items: center;
     justify-content: flex-end;
+    gap: 10px;
 
 }
 
@@ -41,20 +43,24 @@
     height: 64px;
     width: 64px;
     border-radius: 32px;
+
 }
 
-.infoPerson span {
-    font-weight: 500;
-    display: wrap;
-    flex-wrap: wrap;
+.hostName {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
     color: #FF6060;
-
+    font-weight: 500;
 }
 
 .infoLogement {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
+
 }
 
 .tags {
