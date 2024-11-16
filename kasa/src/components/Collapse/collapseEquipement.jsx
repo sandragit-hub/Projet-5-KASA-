@@ -13,7 +13,8 @@ export function CollapseEquipement({ equipments }) {
                     <img className='arrow' src={arrow} alt="flèche pour ouvrir la description" />
                 </button>
             </div>
-            {open && <div className="descriptionDropdown">{equipments}</div>}
+            <div className={`descriptionDropdown ${open ? 'open' : ''}`}>
+                {equipments} </div>
         </div>
     );
 };
