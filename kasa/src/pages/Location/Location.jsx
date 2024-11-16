@@ -1,10 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useFetch } from "../utils/hooks/useFetch";
-import Carousel from "../components/carousel/Carousel";
-import { CollapseDescription } from "../components/Collapse/collapseDescription";
-import { CollapseEquipement } from "../components/Collapse/collapseEquipement";
-import '../pages/Habitation.scss'
-import Rating from "../components/Rating/rating";
+import { useFetch } from "../../utils/hooks/useFetch";
+import Carousel from "../../components/carousel/Carousel";
+import { CollapseDescription } from "../../components/Collapse/collapseDescription";
+import { CollapseEquipement } from "../../components/Collapse/collapseEquipement";
+import '../../pages/Location/Location.scss'
+import Rating from "../../components/Rating/rating";
 
 export default function Habitation() {
 
@@ -42,6 +42,7 @@ export default function Habitation() {
                 </div>
                 <div className="moreInfo">
                     <div className="infoPerson">
+
                         <span >{name}</span>
                         <img src={logement.host.picture} alt='portrait de la personne' />
                     </div>
