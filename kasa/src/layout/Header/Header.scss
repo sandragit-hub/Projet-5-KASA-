@@ -1,3 +1,6 @@
+@import '../../utils/sass/variable';
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -6,12 +9,28 @@ header {
     margin-top: 20px;
     margin-bottom: 50px;
     max-width: 1240px;
+    width: 100%;
+
+    @media screen and (max-width: 1440px) {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    @media screen and (max-width: 1024px) {
+        max-width: 90%;
+        margin: 15px auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 20px auto;
+
+    }
 
     img {
         height: 68px;
 
         @media screen and (max-width: 768px) {
-            height: 47px;
+            height: 30px;
         }
     }
 
@@ -22,28 +41,27 @@ header {
         gap: 30px;
 
         .linkNav {
-            color: #000000;
+            color: $blackColor;
             margin: 5px;
             text-decoration: none;
 
             &:hover {
-                color: #000000;
+                color: $blackColor;
             }
 
             @media screen and (max-width: 768px) {
                 margin: auto 5px;
+                text-transform: uppercase;
+                margin-right: 15px;
+                font-size: 14px;
             }
         }
 
         .linkMenu {
             &.active {
-                border-bottom: 1px solid #ff6060;
+                border-bottom: 1px solid $redColor;
             }
         }
     }
 
-    @media screen and (max-width: 768px) {
-        margin: 40px 2.5%;
-        width: 95%;
-    }
 }
