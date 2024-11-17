@@ -1,42 +1,70 @@
+@import '../../utils/sass/variable';
+
 .Banner {
     position: relative;
     text-align: center;
-    border-radius: 25px;
+    border-radius: $banner-radius;
     margin-bottom: 35px;
     overflow: hidden;
-}
 
-.Banner img {
-    width: 100%;
-    height: 223px;
-    object-fit: cover;
-    border-radius: 25px;
-}
 
-.filterShadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 223px;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 25px;
-}
 
-.bannerText {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    position: absolute;
-    color: white;
-    font-weight: bold;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: calc(1.5rem + 1vw);
-    z-index: 2;
-    margin: 0;
+    @media screen and (max-width: 1024px) {
+        max-width: 90%;
+        margin: 15px auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: $bannerHeightMobile ;
+        border-radius: $bannerRadiusMobile;
+        max-width: 90%;
+
+    }
+
+    img {
+        width: 100%;
+        height: $banner-height;
+        object-fit: cover;
+        border-radius: $banner-radius;
+    }
+
+    .filterShadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $banner-height;
+        background-color: $filter-color;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: $banner-radius;
+
+        @media screen and (max-width: 768px) {
+            height: $bannerHeightMobile ;
+            border-radius: $bannerRadiusMobile;
+        }
+    }
+
+
+    .bannerText {
+        position: absolute;
+        color: $whiteColor;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: calc(1.5rem + 1vw);
+        z-index: 2;
+        margin: 0;
+
+        @media screen and (max-width: 768px) {
+            text-align: left;
+            left: 30%;
+            font-size: 21px;
+            width: 37%;
+        }
+    }
 
 }
