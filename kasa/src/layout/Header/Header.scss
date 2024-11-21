@@ -11,11 +11,6 @@ header {
     max-width: 1240px;
     width: 100%;
 
-    @media screen and (max-width: 1440px) {
-        max-width: 90%;
-        margin: 20px auto;
-    }
-
     @media screen and (max-width: 1024px) {
         max-width: 90%;
         margin: 15px auto;
@@ -39,6 +34,10 @@ header {
         display: flex;
         width: 100%;
         gap: 30px;
+
+        @media screen and (max-width: 768px) {
+            gap: 5px;
+        }
 
         .linkNav {
             color: $blackColor;

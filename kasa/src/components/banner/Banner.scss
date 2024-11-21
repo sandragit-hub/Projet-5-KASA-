@@ -7,8 +7,6 @@
     margin-bottom: 35px;
     overflow: hidden;
 
-
-
     @media screen and (max-width: 1024px) {
         max-width: 90%;
         margin: 15px auto;
@@ -16,9 +14,7 @@
 
     @media screen and (max-width: 768px) {
         height: $bannerHeightMobile ;
-        border-radius: $bannerRadiusMobile;
         max-width: 90%;
-
     }
 
     img {
@@ -42,7 +38,6 @@
 
         @media screen and (max-width: 768px) {
             height: $bannerHeightMobile ;
-            border-radius: $bannerRadiusMobile;
         }
     }
 

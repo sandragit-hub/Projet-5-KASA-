@@ -1,32 +1,71 @@
+@import '../../utils/sass/variable';
+
 .error404 {
     width: 100%;
     text-align: center;
     height: auto;
-}
 
-.titleError {
-    color: #FF6060;
-    font-size: 263px;
-    margin-bottom: 70px;
-    margin-top: 90px;
-}
+    @media screen and (max-width: 1024px) {
+        margin-top: 0;
+    }
 
-.description404 {
-    color: #FF6060;
-    font-size: 51px;
 
-}
+    @media screen and (max-width: 768px) {
+        margin-top: 0;
+    }
 
-.info404 {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding-bottom: 80px;
-}
+    .titleError {
+        color: $redColor;
+        font-size: 263px;
+        margin-bottom: 70px;
+        margin-top: 90px;
 
-.linkError {
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 26px;
-    color: black;
+        @media screen and (max-width: 1024px) {
+            font-size: 184px;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            font-size: 150px;
+        }
+    }
+
+
+    .description404 {
+        color: $redColor;
+        font-size: 51px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 40px;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    .info404 {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding-bottom: 80px;
+    }
+
+    .linkError {
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 26px;
+        color: $blackColor;
+
+
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
 }

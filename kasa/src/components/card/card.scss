@@ -1,3 +1,5 @@
+@import '../../utils/sass/variable';
+
 .card {
     position: relative;
     width: 100%;
@@ -6,26 +8,37 @@
     cursor: pointer;
     overflow: hidden;
     transition: box-shadow 0.2s ease-in-out;
-    background: rgb(248, 92, 92);
-}
+    background: $redColor;
 
-.card img {
-    width: 100%;
-    height: 280px;
-    border-radius: 7px;
-    object-fit: cover;
-}
 
-.card h3 {
-    color: white;
-    position: absolute;
-    bottom: 20px;
-    width: 90%;
-    margin: 0;
-    padding-left: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    z-index: 2;
+    @media screen and (max-width: 768px) {
+        height: 255px;
+        margin-top: 9px;
+    }
+
+
+    img {
+        width: 100%;
+        height: 280px;
+        border-radius: 7px;
+        object-fit: cover;
+
+        @media screen and (max-width: 768px) {
+            height: 204px;
+        }
+    }
+
+    h3 {
+        color: $whiteColor;
+        position: absolute;
+        bottom: 20px;
+        width: 90%;
+        margin: 0;
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        z-index: 2;
+    }
 }
 
 .divCard {
@@ -35,4 +48,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 9px;
+    }
 }

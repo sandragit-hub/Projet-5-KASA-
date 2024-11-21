@@ -1,88 +1,125 @@
+@import '../../utils/sass/variable';
+
 .allInfo {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-}
 
-.firstInfo {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
+    .firstInfo {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
 
-.habitation {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
 
-.habitation h2 {
-    color: #FF6060;
-}
+        .habitation {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
 
-.moreInfo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-}
+            h2 {
+                color: $redColor;
+            }
 
-.infoPerson {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
+            .tags {
+                display: flex;
+                width: 100%;
 
-}
+                @media screen and (max-width: 768px) {
+                    width: 70%;
+                }
 
-.infoPerson img {
-    height: 64px;
-    width: 64px;
-    border-radius: 32px;
+                span {
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 600;
+                    background-color: $redColor;
+                    color: $whiteColor;
+                    margin-right: 10px;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    width: 115px;
+                    white-space: nowrap;
+                    padding: 5px 10px;
 
-}
 
-.hostName {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    color: #FF6060;
-    font-weight: 500;
-}
+                    @media screen and (max-width: 768px) {
+                        font-weight: 500;
+                    }
 
-.infoLogement {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
+                    @media screen and (max-width: 400px) {
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
 
-}
+        .moreInfo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
 
-.tags {
-    display: flex;
-    width: 100%;
-}
+            @media screen and (max-width: 768px) {
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+            }
 
-.tags span {
-    display: flex;
-    text-align: center;
-    font-weight: 600;
-    background-color: #FF6060;
-    color: white;
-    margin-right: 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    min-width: 115px;
-    padding: 5px 10px;
+            .infoPerson {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 10px;
 
-}
+                @media screen and (max-width: 768px) {
+                    justify-content: center;
+                    width: 100%;
+                }
 
-.classRating {
-    display: flex;
-    justify-content: flex-end;
+                img {
+                    height: 64px;
+                    width: 64px;
+                    border-radius: 32px;
+                }
+
+                .hostName {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    color: $redColor;
+                    font-weight: 500;
+                }
+            }
+
+            .classRating {
+                display: flex;
+                justify-content: flex-end;
+
+                @media screen and (max-width: 768px) {
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .infoLogement {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
 }
