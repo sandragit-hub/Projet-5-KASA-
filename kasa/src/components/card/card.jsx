@@ -6,7 +6,7 @@ export function Card({ id, title, cover }) {
     return (
         <Link to={`/location/${id}`} className="linkNav linkMenu">
             <article key={id} className="card">
-                <img src={cover} alt="" />
+                <img src={cover} alt="photo des logements" />
                 <h3>{title}</h3>
             </article>
         </Link>

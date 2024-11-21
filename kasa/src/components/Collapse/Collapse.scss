@@ -1,33 +1,38 @@
+@import '../../utils/sass/variable';
+
 .dropDownDiv {
     border-radius: 5px;
-    margin-bottom: 35px;
+    margin: 10px auto 35px;
     width: 80%;
-    margin: 10px auto;
 }
 
 .dropDownDivInfo {
     border-radius: 5px;
     margin-bottom: 35px;
     width: 45%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .dropDownBanner {
     margin: 10px auto;
-    background-color: #FF6060;
+    background-color: $redColor;
     border-radius: 5px;
     text-align: left;
-    color: #FFFFFF;
+    color: $whiteColor;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.collapseTitle {
-    color: #ffffff;
-    height: 50px;
-    line-height: 50px;
-    margin: 5px 10px;
+    .collapseTitle {
+        color: $whiteColor;
+        height: 50px;
+        line-height: 50px;
+        margin: 5px 10px;
+    }
 }
 
 .arrowDropdown {
@@ -38,61 +43,30 @@
     outline: none;
     transition: all 0.2s ease-in-out;
 
-}
+    &:hover {
+        cursor: pointer;
+    }
 
-.arrowDropdown.open {
-    transform: rotate(180deg);
-}
+    &.open {
+        transform: rotate(-180deg);
+    }
 
-.arrow {
-    height: 20px;
-
-}
-
-.arrowDropdown:hover {
-    cursor: pointer;
-}
-
-.arrowDropdown.open {
-    transform: rotate(-180deg);
+    .arrow {
+        height: 20px;
+    }
 }
 
 .descriptionDropdown {
-    background-color: #f6f6f6;
+    background-color: $whiteColor;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 0 10px;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
-}
 
-.descriptionDropdown.open {
-    max-height: 230px;
-    padding: 25px 10px 10px 10px;
-}
-
-
-
-.dropDownBannerDescription {
-    background-color: #FF6060;
-
-    border-radius: 5px;
-    text-align: left;
-    color: #FFFFFF;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.dropDownBannerEquipement {
-    background-color: #FF6060;
-
-    border-radius: 5px;
-    text-align: left;
-    color: #FFFFFF;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
+    &.open {
+        max-height: 230px;
+        padding: 25px 10px 10px;
+    }
 }

@@ -15,5 +15,5 @@ export function Banner({ image, text, showShadow }) {
 Banner.propTypes = {
     image: PropTypes.string,
     text: PropTypes.string,
-    showShadow: PropTypes.string,
+    showShadow: PropTypes.bool,
 }
