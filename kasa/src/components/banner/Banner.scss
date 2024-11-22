@@ -8,13 +8,11 @@
     overflow: hidden;
 
     @media screen and (max-width: 1024px) {
-        max-width: 90%;
         margin: 15px auto;
     }
 
     @media screen and (max-width: 768px) {
         height: $bannerHeightMobile ;
-        max-width: 90%;
     }
 
     img {
@@ -23,6 +21,7 @@
         object-fit: cover;
         border-radius: $banner-radius;
     }
+
 
     .filterShadow {
         position: absolute;
@@ -59,6 +58,11 @@
             left: 30%;
             font-size: 21px;
             width: 37%;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 18px;
+            width: 50%;
         }
     }
 

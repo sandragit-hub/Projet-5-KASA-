@@ -16,6 +16,10 @@
         margin-top: 9px;
     }
 
+    @media screen and (max-width: 495px) {
+        height: 262px;
+        margin-top: 9px;
+    }
 
     img {
         width: 100%;
@@ -44,10 +48,10 @@
 .divCard {
     background-color: rgba(240, 239, 239, 0.468);
     border-radius: 25px;
-    padding: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 40px;
 
     @media screen and (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
@@ -59,5 +63,6 @@
         flex-direction: column;
         background-color: white;
         margin-top: 9px;
+        padding: 0%;
     }
 }
