@@ -7,6 +7,10 @@
     max-width: 1240px;
     margin: 0 auto;
 
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
     .firstInfo {
         display: flex;
         align-items: center;
@@ -30,9 +34,7 @@
                 display: flex;
                 width: 100%;
 
-                @media screen and (max-width: 768px) {
-                    width: 70%;
-                }
+                @media screen and (max-width: 768px) {}
 
                 span {
                     display: flex;
@@ -43,13 +45,14 @@
                     margin-right: 10px;
                     border-radius: 10px;
                     font-size: 14px;
-                    width: 115px;
+                    max-width: 115px;
                     white-space: nowrap;
                     padding: 5px 10px;
 
 
                     @media screen and (max-width: 768px) {
                         font-weight: 500;
+                        max-width: 115px;
                     }
 
                     @media screen and (max-width: 400px) {
@@ -65,11 +68,13 @@
             justify-content: flex-end;
             align-items: center;
             gap: 20px;
+            width: 100%;
 
             @media screen and (max-width: 768px) {
                 flex-direction: row;
                 align-items: center;
-                gap: 15px;
+                justify-content: space-between;
+
             }
 
             .infoPerson {
@@ -79,10 +84,7 @@
                 justify-content: flex-end;
                 gap: 10px;
 
-                @media screen and (max-width: 768px) {
-                    justify-content: center;
-                    width: 100%;
-                }
+                @media screen and (max-width: 768px) {}
 
                 img {
                     height: 64px;
@@ -96,6 +98,8 @@
                     text-align: right;
                     color: $redColor;
                     font-weight: 500;
+
+                    @media screen and (max-width: 768px) {}
                 }
             }
 
@@ -103,10 +107,7 @@
                 display: flex;
                 justify-content: flex-end;
 
-                @media screen and (max-width: 768px) {
-                    justify-content: center;
-                    width: 100%;
-                }
+                @media screen and (max-width: 768px) {}
             }
         }
     }
@@ -115,7 +116,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
         margin-top: 20px;
 
         @media screen and (max-width: 768px) {
