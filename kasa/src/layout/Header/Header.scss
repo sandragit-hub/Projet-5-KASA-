@@ -1,5 +1,4 @@
-@import '../../utils/sass/variable';
-
+@use '../../utils/sass/variable' as *;
 
 header {
     display: flex;

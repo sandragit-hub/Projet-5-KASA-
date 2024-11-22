@@ -1,4 +1,4 @@
-@import '../../utils/sass/variable';
+@use '../../utils/sass/variable' as *;
 
 .dropDownDiv {
     border-radius: 5px;
@@ -17,7 +17,6 @@
 }
 
 .dropDownBanner {
-    margin: 10px auto;
     background-color: $redColor;
     border-radius: 5px;
     text-align: left;
