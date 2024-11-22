@@ -1,12 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useFetch } from "../../utils/hooks/useFetch";
 import Carousel from "../../components/carousel/Carousel";
-import { CollapseDescription } from "../../components/Collapse/collapseDescription";
-import { CollapseEquipement } from "../../components/Collapse/collapseEquipement";
+import { Collapse } from "../../components/Collapse/Collapse";
 import '../../pages/Location/Location.scss'
 import Rating from "../../components/Rating/rating";
 
-export default function Habitation() {
+export default function Location() {
 
     const { id } = useParams();
     const navigate = useNavigate();
@@ -35,8 +34,8 @@ export default function Habitation() {
                     <h2>{logement.title}</h2>
                     <p>{logement.location}</p>
                     <div className="tags">
-                        {logement.tags.map((tag) => (
-                            <span key={tag.id} className="tag">{tag}</span>
+                        {logement.tags.map((tag, index) => (
+                            <span key={index} className="tag">{tag}</span>
                         ))}
                     </div>
                 </div>
@@ -53,13 +52,15 @@ export default function Habitation() {
                     </div>
                 </div>
             </div>
-            <div className="infoLogement">
-                <CollapseDescription description={logement.description} />
-                <CollapseEquipement equipments=
-                    {logement.equipments.map((equipment) => (
-                        <li key={equipment.id}>{equipment}</li>
+            <div className="collapseContent">
+                <Collapse title="Description">
+                    {logement.description}
+                </Collapse>
+                <Collapse title="Équipements">
+                    {logement.equipments.map((equipment, index) => (
+                        <li key={index}>{equipment}</li>
                     ))}
-                />
+                </Collapse>
             </div>
         </div>
     );

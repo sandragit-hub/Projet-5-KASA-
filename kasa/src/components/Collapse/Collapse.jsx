@@ -3,7 +3,7 @@ import arrow from "../../assets/image/arrow.png"
 import '../../components/Collapse/Collapse.scss'
 import PropTypes from 'prop-types';
 
-export function Collapse({ title, details }) {
+export function Collapse({ title, children }) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -15,7 +15,7 @@ export function Collapse({ title, details }) {
                 </button>
             </div>
             <div className={`descriptionDropdown ${open ? 'open' : ''}`}>
-                {details}
+                {children}
             </div>
 
         </div>
@@ -24,5 +24,5 @@ export function Collapse({ title, details }) {
 
 Collapse.propTypes = {
     title: PropTypes.string,
-    details: PropTypes.string,
+    children: PropTypes.node,
 }
