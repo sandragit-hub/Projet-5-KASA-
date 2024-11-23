@@ -24,8 +24,6 @@ export default function Location() {
     const name = logement.host.name.split(' ');
     const rating = logement.rating;
 
-    if (!logement) return <p>Logement non trouvé.</p>;
-
     return (
         <div className="allInfo">
             <Carousel pictures={logement.pictures} />

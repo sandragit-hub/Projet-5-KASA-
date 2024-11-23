@@ -10,14 +10,12 @@ header {
     max-width: 1240px;
     width: 100%;
 
-    @media screen and (max-width: 1024px) {
-        max-width: 90%;
-        margin: 15px auto;
-    }
 
     @media screen and (max-width: 768px) {
-        margin: 20px auto;
-
+        margin: 15px auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
     }
 
     img {
@@ -50,7 +48,6 @@ header {
             @media screen and (max-width: 768px) {
                 margin: auto 5px;
                 text-transform: uppercase;
-                margin-right: 15px;
                 font-size: 14px;
             }
         }
