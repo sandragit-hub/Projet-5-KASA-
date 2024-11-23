@@ -12,15 +12,18 @@
     >img {
         display: block;
         margin: auto;
+        height: 100px;
+        width: 150px;
     }
 
     >p {
         color: $whiteColor;
         text-align: center;
+        font-size: 30px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
     }
 
-    @media screen and (max-width: 768px) {
-        width: 47%;
-        text-align: center;
-    }
 }
