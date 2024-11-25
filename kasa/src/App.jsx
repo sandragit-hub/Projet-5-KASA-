@@ -3,7 +3,7 @@ import AppRouter from './components/router';
 import Header from './layout/Header/Header';
 import Footer from './layout/Footer/Footer';
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Header />
@@ -14,4 +14,4 @@ function App() {
 }
 
 
-export default App
+
