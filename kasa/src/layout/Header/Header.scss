@@ -4,12 +4,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 15px auto;
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 1240px;
     width: 100%;
-
 
     @media screen and (max-width: 768px) {
         margin: 15px auto;
