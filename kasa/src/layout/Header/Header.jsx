@@ -3,7 +3,7 @@ import logo from "../../assets/image/logo-kasa.png"
 import '../../layout/Header/Header.scss'
 
 
-function Header() {
+export default function Header() {
     return (
         <header>
             <img src={logo} alt='logo Kasa' />
@@ -16,4 +16,3 @@ function Header() {
     )
 }
 
-export default Header

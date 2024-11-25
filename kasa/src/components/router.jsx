@@ -4,7 +4,7 @@ import About from '../pages/About/About';
 import Error from '../pages/Error/Error';
 import Location from '../pages/Location/Location';
 
-function AppRouter() {
+export default function AppRouter() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
@@ -16,5 +16,5 @@ function AppRouter() {
     );
 }
 
-export default AppRouter;
+
 
